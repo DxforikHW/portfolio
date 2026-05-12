@@ -64,6 +64,20 @@ const portfolioData = [
     cover: '/src/assets/images/work-4.jpg',
     embedUrl: 'https://player.bilibili.com/player.html?bvid=XXXXX',
   },
+  {
+    title: '作品标题 5',
+    desc: '短片 / 2024 · 担任导演',
+    role: '导演',
+    cover: '/src/assets/images/work-5.jpg',
+    embedUrl: 'https://player.bilibili.com/player.html?bvid=XXXXX',
+  },
+  {
+    title: '作品标题 6',
+    desc: '广告 / 2024 · 担任导演、剪辑',
+    role: '导演 · 剪辑',
+    cover: '/src/assets/images/work-6.jpg',
+    embedUrl: 'https://player.bilibili.com/player.html?bvid=XXXXX',
+  },
 ];
 
 const grid = document.getElementById('portfolioGrid');
