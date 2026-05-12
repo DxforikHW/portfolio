@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav-dots" id="navDots">
+    <span class="nav-dot active" data-target="hero"></span>
+    <span class="nav-dot" data-target="about"></span>
+    <span class="nav-dot" data-target="portfolio"></span>
+    <span class="nav-dot" data-target="contact"></span>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section-hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-name">你的名字</h1>
+      <p class="hero-role">导演 · 编剧 · 剪辑</p>
+      <div class="hero-scroll-indicator">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-about">
+    <div class="section-inner">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="/src/assets/images/profile.jpg" alt="个人照片">
+        </div>
+        <div class="about-info">
+          <div class="about-item">
+            <h3>教育背景</h3>
+            <p><!-- 院校及专业 --></p>
+          </div>
+          <div class="about-item">
+            <h3>专业技能</h3>
+            <ul class="skills-list">
+              <li>导演</li><li>剪辑</li><li>剧本创作</li><li>调色</li>
+            </ul>
+          </div>
+          <div class="about-item">
+            <h3>获奖与实习经历</h3>
+            <p><!-- 获奖和实习经历 --></p>
+          </div>
+          <div class="about-item">
+            <h3>个人介绍</h3>
+            <p><!-- 简短个人介绍 --></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section-portfolio">
+    <div class="section-inner">
+      <h2 class="section-title">作品集</h2>
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-contact">
+    <div class="section-inner">
+      <h2 class="section-title">联系方式</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="contact-label">邮箱</span>
+          <span class="contact-value">your@email.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">微信</span>
+          <span class="contact-value">your_wechat</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">手机</span>
+          <span class="contact-value">138-xxxx-xxxx</span>
+        </div>
+        <div class="contact-socials">
+          <a href="#" class="social-link">Bilibili</a>
+          <a href="#" class="social-link">微博</a>
+          <a href="#" class="social-link">小红书</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Modal -->
+  <div class="modal" id="videoModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-video-wrapper" id="modalVideoWrapper"></div>
+      <div class="modal-info">
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
