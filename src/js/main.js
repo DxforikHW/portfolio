@@ -35,47 +35,49 @@ window.addEventListener('scroll', updateActiveDot, { passive: true });
 updateActiveDot();
 
 // === Portfolio ===
+const BASE = import.meta.env.BASE_URL;
+
 const portfolioData = [
   {
     title: '作品标题 1',
     desc: '短片 / 2026 · 担任导演、编剧',
     role: '导演 · 编剧',
-    cover: '/src/assets/images/work-1.jpg',
+    cover: BASE + 'images/work-1.jpg',
     embedUrl: 'https://www.xinpianchang.com/a13668759?from=webShare&channel=copyLink',
   },
   {
     title: '作品标题 2',
     desc: '微电影 / 2026 · 担任导演、剪辑',
     role: '导演 · 剪辑',
-    cover: '/src/assets/images/work-2.jpg',
+    cover: BASE + 'images/work-2.jpg',
     embedUrl: 'https://www.xinpianchang.com/a13668759?from=webShare&channel=copyLink',
   },
   {
     title: '作品标题 3',
     desc: 'MV / 2026 · 担任导演',
     role: '导演',
-    cover: '/src/assets/images/work-3.jpg',
+    cover: BASE + 'images/work-3.jpg',
     embedUrl: 'https://www.xinpianchang.com/a13668759?from=webShare&channel=copyLink',
   },
   {
     title: '作品标题 4',
     desc: '短片 / 2026 · 担任编剧、剪辑',
     role: '编剧 · 剪辑',
-    cover: '/src/assets/images/work-4.jpg',
+    cover: BASE + 'images/work-4.jpg',
     embedUrl: 'https://www.xinpianchang.com/a13668759?from=webShare&channel=copyLink',
   },
   {
     title: '作品标题 5',
     desc: '短片 / 2026 · 担任导演',
     role: '导演',
-    cover: '/src/assets/images/work-5.jpg',
+    cover: BASE + 'images/work-5.jpg',
     embedUrl: 'https://www.xinpianchang.com/a13668759?from=webShare&channel=copyLink',
   },
   {
     title: '作品标题 6',
     desc: '广告 / 2026 · 担任导演、剪辑',
     role: '导演 · 剪辑',
-    cover: '/src/assets/images/work-6.jpg',
+    cover: BASE + 'images/work-6.jpg',
     embedUrl: 'https://www.xinpianchang.com/a13668759?from=webShare&channel=copyLink',
   },
 ];
