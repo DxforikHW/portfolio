@@ -207,6 +207,9 @@ section {
 /* === Awards List === */
 .awards-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
 }
 
 .awards-list li {
