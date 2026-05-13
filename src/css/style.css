@@ -204,6 +204,31 @@ section {
   letter-spacing: 0.05em;
 }
 
+/* === Awards List === */
+.awards-list {
+  list-style: none;
+}
+
+.awards-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+}
+
+.awards-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
 /* === Portfolio === */
 .section-portfolio {
   background: var(--bg-elevated);
