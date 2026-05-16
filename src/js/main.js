@@ -143,31 +143,6 @@ document.querySelectorAll('.section-title').forEach(title => {
   );
 });
 
-// About grid entrance
-gsap.fromTo('.about-photo',
-  { opacity: 0, x: -40 },
-  {
-    opacity: 1, x: 0, duration: 0.8,
-    scrollTrigger: {
-      trigger: '.about-grid',
-      start: 'top 80%',
-      toggleActions: 'play none none none',
-    }
-  }
-);
-
-gsap.fromTo('.about-info',
-  { opacity: 0, x: 40 },
-  {
-    opacity: 1, x: 0, duration: 0.8,
-    scrollTrigger: {
-      trigger: '.about-grid',
-      start: 'top 80%',
-      toggleActions: 'play none none none',
-    }
-  }
-);
-
 // Portfolio cards stagger entrance
 gsap.fromTo('.portfolio-card',
   { opacity: 0, y: 30 },
