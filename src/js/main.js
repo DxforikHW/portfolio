@@ -72,6 +72,7 @@ const portfolioData = [
     role: '导演',
     cover: BASE + 'images/work-5.png',
     embedUrl: 'https://www.xinpianchang.com/a13668759?from=webShare&channel=copyLink',
+    portrait: true,
   },
   {
     title: '作品标题 6',
@@ -79,6 +80,7 @@ const portfolioData = [
     role: '导演 · 剪辑',
     cover: BASE + 'images/work-6.png',
     embedUrl: 'https://www.xinpianchang.com/a13668759?from=webShare&channel=copyLink',
+    portrait: true,
   },
 ];
 
@@ -86,7 +88,7 @@ const grid = document.getElementById('portfolioGrid');
 
 portfolioData.forEach(work => {
   const card = document.createElement('div');
-  card.className = 'portfolio-card';
+  card.className = 'portfolio-card' + (work.portrait ? ' portrait' : '');
   card.innerHTML = `
     <img src="${work.cover}" alt="${work.title}">
     <div class="portfolio-card-body">
